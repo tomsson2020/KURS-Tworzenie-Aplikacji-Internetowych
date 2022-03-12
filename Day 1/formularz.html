@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <nav>
+            <ul>
+                <!-- przejście do linku -->
+                <li> <a href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna">Wikipedia </a></li>
+                <!-- przejście do linku i otwarcie w nowej karcie -->
+                <li><a target="_bank" href="https://thenewlook.pl/regulamin-sklepu-internetowego/">Regulamin</a></li>
+                <li><a href="./index.html">Strona Główna</a></li>
+                <li><a href="./semantyka.html">Semantyka</a></li>
+                <li><a href="./nawigacja.html">Nawigacja</a></li>
+                <li><a href="./tabele.html">Tabela</a></li>
+                <li><a href="./tabele2.html">Tabela2</a></li>
+                <li><a href="./formularz.html">Formularz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>input</h2>
+        <form action="./index.html">
+            <input required type="text" placeholder="Podaj imię">
+            <br>
+            <br>
+            <input min="18" max="99" required type="number" placeholder="Podaj wiek">
+            <br>
+            <br>
+            <input minlength="5" required type="password" placeholder="Wpisz hasło">
+            <br>
+            <br>
+            <input required type="mail" placeholder="Podaj mail">
+            <br>
+            <input type="submit" value="Wyślij">
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <h2>select</h2>
+        <form action="">
+
+            <select name="" id="">
+                <option selected disabled value="">Wybierz województwo</option>
+                <option value="Śląskie">Śląskie</option>
+                <option value="Małopolskie">Małopolskie</option>
+                <option value="Mazowieckie">Mazowieckie</option>
+
+
+            </select>
+
+
+            <input type="submit">
+        </form>
+        <br>
+        <br>
+        <br>
+        <h2>checkbox</h2>
+        <form action="">
+            <input id="Country" required type="checkbox">
+            <label for="Country">Pochodzę z Polski</label>
+            <br>
+            <input id="Age" required type="checkbox">
+            <label for="Age">Mam 18 lat</label>
+            <br>
+            <input type="submit">
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <h2>radio buttons</h2>
+        <form action="">
+            <input required name="Colors" id="Answer1" type="radio" value="Czerwony">
+            <label id="Answer1" for="">Czerwony</label>
+            <br>
+            <input name="Colors" id="Answer2" type="radio" value="Niebieski">
+            <label id="Answer2" for="">Niebieski</label>
+            <br>
+            <input name="Colors" id="Answer3" type="radio" value="ZIelony">
+            <label id="Answer3" for="">Zielony</label>
+            <br>
+            <input type="submit">
+
+
+        </form>
+        <br>
+        <br>
+        <br>
+
+        <h2>Pozostałe inputy</h2>
+
+        <form action="">
+            <input type="date">
+            <br>
+            <input type="file" name="" id="">
+            <br>
+            <input type="color" name="" id="">
+            <br>
+            <input min="0" max="10" value="8" type="range" name="" id="">
+
+
+
+        </form>
+
+
+        <section>
+            <details>
+                <summary>Podaj szczegóły</summary>
+                <h2>Główny opis</h2>
+                <p>Krótki opis</p>
+                <p>opis</p>
+            </details>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

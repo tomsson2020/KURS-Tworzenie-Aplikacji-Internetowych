@@ -1,0 +1,18 @@
+https://cssbattle.dev - trening css
+https://www.w3schools.com/html/html_intro.asp - dokumentacja html
+https://divtable.com/generator/ - generator tabel
+https://www.w3schools.com/html/html_exercises.asp - cwiczenia html
+https://www.100forms.com/ready-forms/advertising-estimate-form/ - trening formularzy html
+
+
+https://www.udemy.com/course/10-projektow-w-czystym-javascript-cz-1/
+https://www.freecodecamp.org/learn
+https://eduweb.pl/
+https://www.udemy.com/
+https://www.skillshare.com/signup?utm_source=Google&utm_medium=paidsearch&utm_campaign=Brand_EN-ROW&utm_term=skillshare&matchtype=e&gclid=CjwKCAiAo4OQBhBBEiwA5KWu_y_kqX1JiiPgb9itRfDaZarsl-_SYcT6rHjAPvVI0FcP9nUlwuYlzxoCFz0QAvD_BwE&coupon=Brand_EN-ROWTrialOff
+https://www.frontendmentor.io/
+https://www.codewars.com/
+https://edabit.com/
+https://fonts.google.com/ - darmowe czcionki
+
+https://flexboxfroggy.com/#pl - ćwieczenia css
