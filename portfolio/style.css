@@ -1,3 +1,100 @@
-.body {
-    background-color: beige;
-}
+/* niech wszystkie elementy w swoich wielkościach 
+uwzględniają border */
+*{
+    box-sizing: border-box;
+  }
+  /* ustawiamy wielkość dla 1rem */
+  :root{
+    font-size:16px;
+  }
+  body{
+    background-color: rgb(249, 250, 215);
+    /* usuwamy domyślny margines (8px) z body */
+    margin:0;
+  }
+  /* ten ptaszek oznacza BEZPOŚREDNI hedader od body */
+  body > header{
+    /* żeby dzieci w pozycji absolutniej się dostosowały */
+    position:relative;
+    padding:.2rem;
+    background-color: rgb(199, 199, 199);
+    height:3.4rem;
+    /* wyświetl wszystkie elementy na środku (horyzontalnie) */
+    display:flex;
+    align-items: center;
+  }
+  /* nie wyświetlaj inputa */
+  body > header input{
+    display:none;
+  }
+  body > header label{
+    border:2px solid #000;
+    /* zaokrąglenie krawędzi */
+    border-radius: 8px;
+    width:3rem;
+    height:3rem;
+    /* nie przejmuj się rodzeństwem */
+    position:absolute;
+    /* wyświetl dzieci w równych odstępach */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:.3rem;
+    cursor:pointer;
+  }
+  body > header label div{
+    /* animacja trwająca pół sekundy */
+    transition:.5s;
+    border:2px solid #000;
+    border-radius: 2px;
+    background-color: #000;
+    width:100%;
+  }
+  
+  body > header p {
+    margin:0;
+    /* odsuń paragraf od lewej o wielkość przyciku */
+    margin-left: 3.5rem;
+  }
+  
+  body > header nav{
+    display:flex;
+    flex-direction: column;
+    /* gap - oddal elementy od siebie */
+    gap:.5rem;
+    padding:1rem;
+    /* żeby nie wpłwać na inne elementy na stronie */
+    position:absolute;
+    width:100%;
+    background-color: rgba(22, 21, 21, 0.884);
+    left:0;
+    /* 100% to wielkość rodzica (headera) */
+    top:100%;
+    display:none;
+  }
+  body > header nav a{
+    /* zmień domyślne wartości linków */
+    text-decoration:none;
+    color:#fff;
+  }
+  
+  /* ELEMENTY ZMIENIAJĄCE SIĘ POD WPŁYWEM 
+  KLIKNIĘTEGO INPUTA */
+  body > header input:checked ~ nav{
+    display:flex;
+  }
+  body > header input:checked ~ label{
+    padding:0;  
+  } 
+  /* nth-child - to n-te dziecko */
+  body > header input:checked ~ label div:nth-child(1){
+    position:absolute;
+    transform: rotate(45deg);
+  }
+  body > header input:checked ~ label div:nth-child(2){
+    display:none;
+  }
+  body > header input:checked ~ label div:nth-child(3){
+    position:absolute;
+    transform: rotate(-45deg);
+  }
